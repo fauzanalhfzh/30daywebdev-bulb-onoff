@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulb on/off</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- Lampu nyala / Mati Start -->
+    <div class="container">
+      <img src="off.jpg " class="myImage" onclick="toggleImage()" width="200" />
+      <h3><i>Tekan pada gambar lampu untuk menyalakan.</i></h4>
+      </div>
+    <!-- Lampu nyala / Mati End -->
+
+    <script>
+      function toggleImage() {
+        var image = document.querySelector(".myImage");
+        image.src = image.src.endsWith("off.jpg") ? "on.jpg" : "off.jpg";
+      }
+    </script>
+  </body>
+</html>
